@@ -150,7 +150,6 @@ public:
     for(int i = 0; i < maxGrado; i++) newRoots[i] = nullptr;
 
     for(NodoB<T>* elem: this->m_heap) {
-      std::cout<<"Compactando "<<elem->getM_key()<<"\n";
       elemtemp = elem;
       if(newRoots[elemtemp->getM_Grado()]) {
         

@@ -20,9 +20,8 @@ public:
   // Constructors/Destructors
   //  
 
-  NodoB (T& key) {
+  NodoB (T& key):m_key(key) {
     this->m_Grado = 0;
-    this->m_key = key;
     marcado = false;
   }
 
@@ -31,6 +30,7 @@ public:
    * Empty Constructor
    */
   NodoB () {
+
     this->m_Grado = 0;
     marcado = false;
   };
